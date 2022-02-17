@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using MoneyLenderMVC.Models;
 using System.Diagnostics;
+using MoneyLenderMVC.Helpers;
 
 namespace MoneyLenderMVC.Controllers
 {
@@ -16,6 +17,32 @@ namespace MoneyLenderMVC.Controllers
         public IActionResult Index()
         {
             return View();
+        }
+
+        [HttpGet]
+        public IActionResult App()
+        {
+            Loan loan = new();
+
+            loan.Payment = 0.0m;
+            loan.TotalInterest = 0.0m;
+            loan.TotalCost = 0.0m;
+            loan.Rate = 3.0m;
+            loan.Amount = 15000m;
+            loan.Term = 60;
+
+            return View(loan);
+        }
+        [HttpPost]
+        [AutoValidateAntiforgeryToken]
+        public IActionResult App(Loan loan)
+        {
+            //calculate the loan and get payments
+            var loanHelper = new LoanHelper();
+
+            Loan newLoan = loanHelper.GetPayments(loan);
+
+            return View(newLoan);
         }
 
         public IActionResult Privacy()

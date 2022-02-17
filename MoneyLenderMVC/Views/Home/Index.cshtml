@@ -2,7 +2,37 @@
     ViewData["Title"] = "Home Page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<div class="container col-xxl-8 px-4 mb-1">
+    <div class="row g-5 row-cols-1 row-cols-lg-2">
+        <div class="col order-last order-lg-first">
+            <h1 class="display-6 fw-bold lh-1 mb-3"><span class="logoFont">MoneyLender</span>: A Coding Project</h1>
+            <h4 class="lead">
+                Do you need <span class="text-success fw-bold">money?</span> Like yesterday? Then you're in the right place! Introducing 
+                <span class="logoFont text-underline"><ins>MoneyLender</ins></span>, the app that shows you what you need to
+                know before getting a loan. You will find out <span class="text-danger fw-bold">EXACTLY</span> how much you will need to 
+                pay back each month based on the loan amount &amp; interest rate. It's so easy &amp; only 
+                takes seconds!
+            </h4>
+            <ul class="fa-ul pt-2 checklist">
+                <li><span class="fa-li"><i class="fas fa-check-square" aria-hidden="true"></i></span>CSS and Bootstrap Layout</li>
+                <li><span class="fa-li"><i class="fas fa-check-square" aria-hidden="true"></i></span>C# Fundamentals</li>
+                <li><span class="fa-li"><i class="fas fa-check-square" aria-hidden="true"></i></span>C# Loops</li>
+                <li><span class="fa-li"><i class="fas fa-check-square" aria-hidden="true"></i></span>C# Methods</li>
+                <li><span class="fa-li"><i class="fas fa-check-square" aria-hidden="true"></i></span>C# IF/THEN/ELSE</li>
+                <li><span class="fa-li"><i class="fas fa-check-square" aria-hidden="true"></i></span>C# Boolean Logic</li>
+            </ul>
+            <div id="appBtn">
+                <a type="button" class="btn btn-outline-danger btn-lg px-4 me-md-2 mb-3" asp-controller="Home" asp-action="App">Try It Out!</a>
+            </div>
+            <div class="row" id="iconRow">
+                <div class="col"><i class="fab fa-js-square jsicon" aria-hidden="true"></i></div>
+                <div class="col"><i class="fab fa-bootstrap bsicon" aria-hidden="true"></i></div>
+                <div class="col"><i class="fab fa-html5 html5icon" aria-hidden="true"></i></div>
+                <div class="col"><i class="fab fa-css3-alt cssicon" aria-hidden="true"></i></div>
+            </div>
+        </div>
+        <div class="col d-flex align-items-center" id="logoCol">
+            <img src="img/MoneyLender.png" class="img-fluid center-block d-block mx-auto" alt="MoneyLender logo" width="500" id="img-logo">
+        </div>
+    </div>
 </div>
