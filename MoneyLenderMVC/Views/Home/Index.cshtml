@@ -2,7 +2,7 @@
     ViewData["Title"] = "Home Page";
 }
 
-<div class="container col-xxl-8 px-4 mb-1">
+<div class="container col-xxl-8 px-4 mb-3">
     <div class="row g-5 row-cols-1 row-cols-lg-2">
         <div class="col order-last order-lg-first">
             <h1 class="display-6 fw-bold lh-1 mb-3"><span class="logoFont">MoneyLender</span>: A Coding Project</h1>
@@ -21,9 +21,9 @@
                 <li><span class="fa-li"><i class="fas fa-check-square" aria-hidden="true"></i></span>C# IF/THEN/ELSE</li>
                 <li><span class="fa-li"><i class="fas fa-check-square" aria-hidden="true"></i></span>C# Boolean Logic</li>
             </ul>
-            <div id="appBtn">
-                <a type="button" class="btn btn-outline-danger btn-lg px-4 me-md-2 mb-3" asp-controller="Home" asp-action="App">Try It Out!</a>
-            </div>
+            <form id="appBtn" asp-controller="Home" asp-action="App" method="get">
+                <button type="submit" class="btn btn-outline-danger btn-lg px-4 me-md-2 mb-3">Try It Out!</button>
+            </form>
             <div class="row" id="iconRow">
                 <div class="col"><i class="fab fa-js-square jsicon" aria-hidden="true"></i></div>
                 <div class="col"><i class="fab fa-bootstrap bsicon" aria-hidden="true"></i></div>

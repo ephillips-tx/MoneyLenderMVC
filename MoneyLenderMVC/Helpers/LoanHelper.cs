@@ -2,7 +2,7 @@
 
 namespace MoneyLenderMVC.Helpers
 {
-    public class loanhelper
+    public class LoanHelper
     {
         public Loan GetPayments(Loan loan)
         {

@@ -33,6 +33,7 @@ namespace MoneyLenderMVC.Controllers
 
             return View(loan);
         }
+
         [HttpPost]
         [AutoValidateAntiforgeryToken]
         public IActionResult App(Loan loan)

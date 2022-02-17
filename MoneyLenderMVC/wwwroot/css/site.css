@@ -5,46 +5,30 @@
     --white-color: #e7e7e7;
 }
 
-html {
-    font-size: 1rem
-}
+html { font-size: 1rem }
 
-.logoFont {
-    font-family: 'Quintessential', cursive; /* from Google fonts */
-}
+.logoFont { font-family: 'Quintessential', cursive; /* from Google fonts */ }
 
-body {
-    color: var(--dark-color);
-}
+body { color: var(--dark-color); }
 
 /* Override bootstrap styling with an id. 
     Every selector has a 'numerical weight.'
     an id = 100 points which should be enough.
 */
-#navLink {
-    color: var(--white-color);
-}
+#navLink { color: var(--white-color); }
 
-#logo, #logo:link, #logo:visited, #logo:hover {
-    color: var(--white-color);
-}
+#logo, #logo:link, #logo:visited, #logo:hover { color: var(--white-color); }
 
-.nav-link:link, .nav-link:visited {
-    color: var(--white-color);
-}
+.nav-link:link, .nav-link:visited { color: var(--white-color); }
 
-.nav-link:hover {
-    opacity: .75;
-}
+.nav-link:hover { opacity: .75; }
 
 footer, header {
     background-color: var(--primary-color);
     color: var(--white-color);
 }
 
-footer {
-    line-height: 60px;
-}
+footer { line-height: 60px; }
 
 /*footer .social > a {
     color: var(--white-color);
@@ -56,9 +40,7 @@ footer .social > a:hover {
     color: var(--secondary-color);
 }*/
 
-.checklist > li i {
-    color: var(--secondary-color)
-}
+.checklist > li i { color: var(--secondary-color) }
 
 code[class*="language-"],
 pre[class*="language-"] {
@@ -81,6 +63,15 @@ h1, h2, h3, h4, h5, h6 { color: var(--dark-color); }
     bottom: 0;
     width: 100%;
 }
+
+#btnCalc:hover {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+}
+
+.link-light:hover { opacity: .75; }
+
+.table { font-size: .7rem; }
 
 /* LOAN FORM STYLES */
 .loanForm {
@@ -121,21 +112,11 @@ h1, h2, h3, h4, h5, h6 { color: var(--dark-color); }
     font-weight: bold;
 }
 
-#btnCalc:hover {
-    background-color: var(--primary-color);
-    color: var(--white-color);
-}
-
-.link-light:hover {
-    opacity: .75;
-}
-
 /* ~-~-~-~-~-~- Breakpoint Adjustments ~-~-~-~-~-~- */
 
 @media only screen and (min-width: 575px) {
-    footer {
-        font-size: .8rem;
-    }
+    footer, .table { font-size: .8rem; }
+    
 }
 
 @media only screen and (min-width: 776px) {
@@ -145,9 +126,7 @@ h1, h2, h3, h4, h5, h6 { color: var(--dark-color); }
 }
 
 @media only screen and (min-width: 991px) {
-    footer {
-        font-size: 1rem;
-    }
+    footer, .table { font-size: 1rem; }
 
     .bsicon, .jsicon, .html5icon, .cssicon {
         font-size: 6rem;
@@ -184,7 +163,7 @@ h1, h2, h3, h4, h5, h6 { color: var(--dark-color); }
         margin: 1em 0 2em;
     }
 
-    #appBtn > a {
+    #appBtn > button {
         width: 9em;
         padding: 1rem;
     }
